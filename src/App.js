@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Main from './Components/Main'
 function Header(){
   return( <><header >
 
@@ -31,9 +33,8 @@ function Footer(){
 function App() {
   return (
     <div >
-   <Header/>
-   <MainContent/>
-   <Footer />
+  <Navbar/>
+  <Main/>
 
       
     </div>

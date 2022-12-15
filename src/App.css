@@ -2,52 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin:0;
+font-family: Inter,sans-serif;
+background-color: #282D35;
+
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.footer{
-  background-color: #1d020280;
-  position:absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  height: 40px;
-  left:0;
-  bottom:0;
-  right:0;
-  }
-
-  .Nav {
-    box-shadow: 2px 2px 2px 0.5px rgba(135, 135, 135, 0.391);
+ 
+  nav {
      display: flex;
-     justify-content: space-between;
      align-items: center;
+     height: 90px;
+     padding: 30px 25px;
+     background-color:#21222A;
+     
    }
-   .Nav-item {
-     list-style: none;
-     display: flex;
-   }
-   .Nav-item > li {
-     padding: 10px;
-   }
-   .image{
-     background-image: url(./logo.svg);
-     width: 70px;
-   }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  nav > img{
+    width:80px;
+    margin-right:7px;
   }
-  to {
-    transform: rotate(360deg);
+  nav >h3 >h4{
+    margin: 0;
   }
+  nav>h4{
+    color:#DEEBF8;
+    font-weight: 600;
+  }
+  nav > h3{
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+main{
+ 
+  color: #ffff;
+  padding: 57px 40px;
+  background-image:url(./reactjs-icon.png) ;
+  background-repeat: no-repeat;
+  background-position-x:right ;
+  background-position-y: center;
+
+}
+
+.main--title{
+  margin:0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+.main--facts {
+  margin-top: 46px;
+}
+.main--facts >li{
+
+ max-width: 350px;
+ padding-block: 10px; 
+
+}
+.main--facts >li::marker{
+  font-size: 1.6rem;
+  color: #61DAFB;
 }
